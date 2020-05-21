@@ -1,0 +1,144 @@
+[class*="section-"] {
+    height: 100vh;
+    width: 100%;
+}
+
+.nav-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    /* background-color: red; */
+    z-index: 2;
+}
+
+.img-section{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 20px 10px 0 10px;
+}
+
+.section-descripcion {
+    background: #F1F2B5;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom right, #03A9F4, #B3E5FC);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom right, #03A9F4, #B3E5FC);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container-informacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100% - 60px);
+    width: 100%;
+}
+
+
+
+.container-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 50%;
+}
+
+.informacion-texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 50px;
+    background-color: white;
+    font-size: 25px;
+    font-weight: 300;
+    word-break: break-all;
+    transform: scale(0,1);
+    transform-origin: left;
+    animation-delay: .5s;
+    animation-direction: line;
+}
+
+.texto-section{
+    width: 75%;
+    height: 50%;
+    text-align: justify;
+}
+
+.iframe-section{
+    margin-right: 40px;
+}
+
+.aside{
+    width: 150px;
+    height: 80%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    height: 200px;
+    background-color: rgb(152, 222, 255);
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.info-footer{
+    width: 200px;
+    
+}
+
+dt{
+    font-weight: 600;
+}
+
+dd{
+    margin-left: 10px;
+}
+
+table{
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+th{
+    height: 50px;
+    background-color: cornflowerblue;
+}
+
+td{
+    background-color: darkgoldenrod;
+    height: 40px;
+}
+
+tr, th, td{
+    border: 1px solid black;
+}
+
+@keyframes mostrar{
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        transform: scale(.1, 1);
+    }
+
+    100%{
+        transform: scale(1,1);
+        opacity: 1;
+    }
+}
